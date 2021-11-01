@@ -1,3 +1,7 @@
+:root {
+    --width: 5vw;
+  }
+
 * {
     margin: 0px;
 }
@@ -8,6 +12,16 @@ body {
     align-items: center;
     min-height: 90vh;
 }
+
+#main {
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        transform: scale(0.5);
+    }
+  }
 
 #box {
     position: relative;
